@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calc";
+
+}
+
+<!-- Header with my name -->
+<h1>Anna Dalley</h1>
+
+<!-- Picture of myself doing something I enjoy -->
+<img src="img/AnnaEatsTacos2.jpg" />
+<br />
+
+<!-- Paragraph on waht I hope to get out of IS 413 -->
+<p>
+    I really hope that I gain some valuable coding experience,
+    but mostly I really hope that I get to have fun putting these
+    skills to memory.  I feel like I have a pretty good grasp on coding concepts,
+    but I feel that I sometimes I have to rely on videos to recall things.
+    So, I'm trying really hard on this assignment to do what I can remember first,
+    then go back and check the practice program I made.
+</p>
+<br />
+
+<!-- Top 3 Jobs I'm most interested in Pursuing when I graduate' -->
+<h2>Top 3 Jobs I Want to Pursue When I Graduate</h2>
+<ul>
+    <li>Project Manager</li>
+    <li>Data Analyst</li>
+    <li>Stay at Home Mom</li>
+</ul>
+<br />
+
+<!-- Grade Calculator form as taken from syllabus -->
+<form>
+    <fieldset>
+        <legend style="font-weight:bolder"> Grade Calculator </legend>
+        <label>Assignments: </label>
+        <input id="pctAssignment" /><br />
+        <label>Group Project: </label>
+        <input id="pctGroup" /><br />
+        <label>Quizzes: </label>
+        <input id="pctQuiz" /><br />
+        <label>Midterm Exam: </label>
+        <input id="pctMidterm" /><br />
+        <label>Final Exam: </label>
+        <input id="pctFinal" /><br />
+        <label>Intex: </label>
+        <input id="pctIntex" />
+        <br />
+        <input id="btnSend" type="button" value="Calculate Grade" />
+    </fieldset>
+</form>
+
+<!-- After button is pressed, the final percent and grade letter is printed here. -->
+<p id="pct&Grade"></p>
+
+
+<br /><br /><br />
+<!-- Necessary Script tags for bootstrap, jquery, and Grade Calculator javascript page -->
+<script src="js/GradeCalculator.js"></script>
+
+<!-- For copyright purposes -->
+<a target="_blank" href="https://icons8.com/icon/6WmNGzM9j4eN/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

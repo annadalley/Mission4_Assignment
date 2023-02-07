@@ -9,10 +9,8 @@
     var iTotal = 0;
     var sLetterGrade = "";
 
-
     //calculates final percentage.
     iTotal = iAssignment * .5 + iGroup * .1 + iQuiz * .1 + iMidterm * .1 + iFinal * .1 + iIntex * .1;
-
 
     //Assigns letter grade depending on Final Percentage.
     if (iTotal >= 94) {
@@ -53,9 +51,10 @@
     }
 
 
-    //print out the total to index.html.
-    document.getElementById("pct&Grade").innerHTML = "Your final percentage is a " + iTotal + "%.  Your letter grade is " + sLetterGrade;
+    //print out the total to index.html. This was for Assignment 4
+    //document.getElementById("pct&Grade").innerHTML = "Your final percentage is a " + iTotal + "%.  Your letter grade is " + sLetterGrade;
 
+    alert("Your final percentage is a " + iTotal + "%.  Your letter grade is " + sLetterGrade);
     //I tried forever to get this to print in Jquery Notation, but I couldn't get it to work.  I used Jquery up above though often, just like in the video.
     //Here's one of my attempts: $("#pct&Grade").html() = "Your final percentage is a " + iTotal + "%.  Your letter grade is " + sLetterGrade;
 
